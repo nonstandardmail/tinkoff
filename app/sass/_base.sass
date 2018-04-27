@@ -1,0 +1,120 @@
+@import "vars"
+
+
+html
+	font-size: 10px
+
+
+html, body
+	height: 100%
+	padding: 0
+	margin: 0
+
+html
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+
+body
+	min-width: 320px
+	position: relative
+	font: 300 18px/24px $font
+	overflow-x: hidden
+	color: #fff
+	background: #000
+	-webkit-text-size-adjust: 100%
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-ms-overflow-style: scrollbar
+
+h1, h2, h3
+	font-family: $font
+	line-height: 1.25
+	font-weight: 300
+h1
+	margin: 0 0 30px
+	font-size: 44px
+	line-height: 50px
+h2
+	margin: 0 0 20px
+	font-size: 38px
+	line-height: 44px
+h3
+	margin: 0 0 10px
+	font-size: 30px
+	line-height: 40px
+
+input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a
+	color: $yellow
+	text-decoration: none
+	transition: color 200ms ease-in-out, opacity 200ms ease-in-out, border-color 200ms
+	&:hover
+		color: #FFCD32
+		text-decoration: none
+
+/////////////////
+
+.btn
+	display: inline-block
+	box-sizing: border-box
+	vertical-align: middle
+	position: relative
+	text-decoration: none !important
+	text-align: center
+	outline: none
+	cursor: pointer
+	min-width: 210px
+	padding: 0 40px
+	font: 400 18px/60px $font
+	color: #000
+	background: $yellow
+	border: 0
+	border-radius: 10px
+	zoom: 1
+	transition: color 250ms, background 250ms, border 250ms, opacity 250ms
+	&:hover
+		color: #000
+		background: #FFCD32
+		opacity: 0.9
+
+	&[disabled]
+		text-shadow: none !important
+		color: #eee !important
+		background: #ccc !important
+		cursor: default
+
+/////////////////
+
+.clearfix
+	-ms-zoom: 1
+	zoom: 1
+	&:before,
+	&:after
+	content: ''
+	display: table
+	&:after
+	clear: both
+
+.counters
+	position: absolute
+	left: -9999px
+	top: -9999px
+	width: 0
+	height: 0
+	line-height: 0
+	font-size: 0
+	overflow: hidden

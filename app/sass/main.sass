@@ -1,0 +1,219 @@
+@import "vars"
+@import "fonts"
+@import "normalize"
+@import "base"
+
+
+.wrapper
+	position: relative
+	margin: 0 auto
+	max-width: 940px
+
+
+.section
+	position: relative
+	z-index: 1
+	padding: 80px 0
+	color: #fff
+	background: #000
+	&_title
+		position: relative
+		z-index: 5
+		margin: 0 0 60px
+		text-align: center
+		color: $yellow
+	&_description
+		position: relative
+		z-index: 5
+		margin: -40px 150px 85px
+		text-align: center
+
+
+.header
+	position: relative
+	z-index: 11
+	height: 150px
+	.wrapper
+		height: 100%
+	&_logo
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		background-position: center
+		background-repeat: no-repeat
+		background-size: contain
+		text-indent: -5000px
+		overflow: hidden
+		&__tinkoff
+			left: 0
+			width: 113px
+			height: 20px
+			background-image: url(../img/logo_tinkoff.png)
+		&__battlegrounds
+			right: 0
+			width: 175px
+			height: 55px
+			background-image: url(../img/logo_battlegrounds.png)
+
+
+.main
+	padding: 0
+	height: 440px
+	background: #170d17
+	&::before
+		content: ''
+		position: absolute
+		z-index: 1
+		bottom: 0
+		left: 0
+		height: 538px
+		width: 100%
+		background: url(../img/main.jpg) center no-repeat
+		background-size: auto 100%
+	.wrapper
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		height: 100%
+	&_content
+		position: relative
+		z-index: 5
+		&_title
+			margin: 0 0 50px
+			width: 420px
+			font-size: 28px
+			line-height: 36px
+		&_rules
+			display: block
+			margin: 30px 0 30px
+			width: 220px
+			font-size: 14px
+			text-align: center
+
+
+.card
+	padding-bottom: 0
+	&_content
+		display: flex
+		justify-content: space-between
+	&_image
+		margin: 0 0 0 70px
+		width: 320px
+		img
+			display: block
+			width: 100%
+	&_list
+		margin: 0
+		padding: 0
+		list-style: none
+		width: 420px
+		&_item
+			position: relative
+			margin: 0 0 50px
+			&::before
+				content: ''
+				position: absolute
+				display: block
+				top: -14px
+				left: -70px
+				width: 55px
+				height: 55px
+				background-position: center
+				background-repeat: no-repeat
+				background-size: contain
+			&__1::before
+				background-image: url(../img/list_1.png)
+			&__2::before
+				background-image: url(../img/list_2.png)
+			&__3::before
+				background-image: url(../img/list_3.png)
+			&__4::before
+				background-image: url(../img/list_4.png)
+
+
+.bonus
+	&_content
+		text-align: center
+	&_list
+		margin: 0
+		padding: 0
+		list-style: none
+		&_item
+			position: relative
+			display: inline-block
+			vertical-align: top
+			margin: 0 20px 60px
+			width: 190px
+			&::before
+				content: ''
+				display: block
+				margin: 0 auto 30px
+				width: 115px
+				height: 126px
+				background-position: center
+				background-repeat: no-repeat
+				background-size: contain
+			&__1::before
+				background-image: url(../img/bonus_1.png)
+			&__2::before
+				background-image: url(../img/bonus_2.png)
+			&__3::before
+				background-image: url(../img/bonus_3.png)
+			&__4::before
+				background-image: url(../img/bonus_4.png)
+
+
+.form
+	padding-bottom: 0
+	background: #fff
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		border: 10px solid transparent
+		border-width: 10px 15px 0
+		border-top-color: #000
+	.section_title
+		color: #000
+	.section_description
+		margin-bottom: 50px
+		color: #4A4A4A
+	iframe
+		display: block
+		position: relative
+		width: 100%
+		height: 950px
+
+
+.players
+	text-align: center
+	&_images
+		content: ''
+		display: block
+		position: absolute
+		z-index: 1
+		top: 90px
+		left: 50%
+		margin: 0 0 0 -520px
+		width: 545px
+		height: 542px
+		background: url(../img/players.jpg) center no-repeat
+		background-size: contain
+	&_content
+		position: relative
+		z-index: 5
+		margin: 0 0 100px 400px
+		padding: 20px 0 0
+		text-align: left
+		p
+			margin: 0 0 25px
+		&_btn
+			margin: 30px 0 0
+	&_rules
+		font-size: 14px
+
+
+@import "media"
