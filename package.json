@@ -23,5 +23,9 @@
   },
   "keywords": [
     "tinkoff"
-  ]
+  ],
+  "dependencies": {
+    "fancy-textfill": "^1.2.4",
+    "fitty": "^2.2.5"
+  }
 }
